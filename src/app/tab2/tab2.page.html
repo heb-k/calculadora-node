@@ -1,0 +1,87 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Calculadora completa
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  [fullscreen]="true" color="medium">
+  <ion-input type="number" readonly [(ngModel)] ="visor" style="text-align: right; font-size: 1.4cm; "  ></ion-input> <br>
+
+  <ion-grid>
+      <ion-row>
+          <ion-col>
+              <ion-button expand=block size="large" color="danger" (click)="click('c')" >C</ion-button>
+          </ion-col>
+          <ion-col>
+              <ion-button expand=block size="large" color="danger" (click)="click('ce')" >CE</ion-button>
+          </ion-col>
+          <ion-col>
+              <ion-button expand=block size="large" color="primary" (click)="click('%')" >%</ion-button>
+          </ion-col>
+          <ion-col>
+              <ion-button expand=block size="large" color="primary" (click)="click('/')" >/</ion-button>
+          </ion-col>
+      </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand=block size="large" color="dark" (click)="click('9')" >9</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand=block size="large" color="dark" (click)="click('8')" >8</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand=block size="large" color="dark" (click)="click('7')" >7</ion-button>
+      </ion-col>
+      <ion-col>
+          <ion-button expand=block size="large" color="primary" (click)="click('X')" >x</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+          <ion-button expand=block size="large" color="dark" (click)="click('6')" >6</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand=block size="large" color="dark" (click)="click('5')" >5</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand=block size="large" color="dark" (click)="click('4')" >4</ion-button>
+        </ion-col>
+        <ion-col>
+            <ion-button expand=block size="large" color="primary" (click)="click('+')" >+</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+            <ion-button expand=block size="large" color="dark" (click)="click('3')" >3</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button expand=block size="large" color="dark" (click)="click('2')" >2</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button expand=block size="large" color="dark" (click)="click('1')" >1</ion-button>
+          </ion-col>
+          <ion-col>
+              <ion-button expand=block size="large" color="primary" (click)="click('-')" >-</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+              <ion-button expand=block size="large" color="primary" (click)="click('+/-')" >+/-</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button expand=block size="large" color="dark" (click)="click('0')" >0</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button expand=block size="large" color="primary" (click)="click(',')" >,</ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button expand=full  size="large" color="primary" (click)="click('=')" >=</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button expand=block  size="large" color="primary" (click)="click('rz')" >2√</ion-button>
+          </ion-col>
+          </ion-row>
+    </ion-grid>
+</ion-content>
